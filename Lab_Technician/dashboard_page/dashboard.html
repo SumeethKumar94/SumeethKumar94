@@ -1,0 +1,209 @@
+<html>
+
+<head>
+    <title>Lab Technician</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <script src="/Users/nikhi/OneDrive/Desktop/dashboard(lab_technician).js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+
+
+        <div class="collapse navbar-collapse my-3" id="navbarTogglerDemo01">
+            <a class="navbar-brand text-info text-decoration  " href="#">
+                <h2>CMS </h2>
+            </a>
+
+        </div>
+        <div class="navbar-items my-3 " id="navbarTogglerDemo01">
+            <a class="navbar-brand text-dark text-decoration  " href="#" style="margin-right: 20px;">
+                <h5>Home</h5>
+            </a>
+        </div>
+        <!-- <div class="navbar-items " id="navbarTogglerDemo01"> -->
+        <!-- <a class="navbar-brand text-dark text-decoration  " href="#" style="margin-right: 80px;">
+                                <h5>Profile</h5>
+                                </a> -->
+        <div class="dropdown my-3">
+            <a class="navbar-brand bg-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+                <h5>Profile</h5>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item  my-4" href="#">Account</a>
+                <a class="dropdown-item  my-4" href="#">Help</a>
+                <a class="dropdown-item  my-4" href="#">Settings</a>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="navbar-items my-3" id="navbarTogglerDemo01">
+            <a class="navbar-brand text-dark text-decoration  " href="#" style="float: right;">
+                <h5>Logout</h5>
+            </a>
+        </div>
+
+    </nav>
+
+
+    <div class="container" style=" min-height: calc(100vh - 82px - 45px);">
+
+        <div class="container-sm  my-5 ml-5  mr-5 text-dark bg-secondary">
+            <div class="row  ">
+                <div class="col  ">
+                    <div class="container-sm p-9 my-5 " style=" justify-content: space-between;  display: flex; ">
+                        <div class="row ">
+                            <div class="col  ">
+                                <button type="button" class="btn btn-primary p-5 "
+                                    style="width:300px; margin: 1em; justify-content: space-between; " id="btn1"
+                                    onclick="return ViewTests()">
+                                    <h3>view Tests</h3>
+                                </button>
+                                <button type="button" class="btn btn-primary p-5"
+                                    style="width:300px; margin: 1em; justify-content: space-between; " id="btn2"
+                                    onclick="return EnterResults()">
+                                    <h3>Enter Results</h3>
+                                </button>
+                                <button type="button" class="btn btn-primary p-5"
+                                    style="width:300px; margin: 1em; justify-content: space-between; " id="btn3"
+                                    onclick="return ViewReports()">
+                                    <h3>View Report
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-sm   ml-5 text-dark bg-swhite">
+            <h3>Recent viewed tests</h3>
+        </div>
+
+
+        <div class="container-sm p-2  my-5 ml-5  mr-5 text-dark bg-secondary">
+            <div class="row  ">
+                <div class="col  ">
+                    <div class="container-sm   ">
+                        <div class="row ">
+                            <div class="col  ">
+                                <div class="container-sm p-2 my-4 bg-light">
+
+                                    <div class="container-sm p-3 my-3  ">
+                                        <div class="row ">
+                                            <div class="col  ">
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;" id="pID"
+                                                    style="width:450px;">PatientID</p>
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;" id="pName"
+                                                    style="width:450px;">PatientName</p>
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;" id="Date"
+                                                    style="width:450px;">Date</p>
+                                                <button type="button" class="btn btn-primary p-3 "
+                                                    style="display: flex; margin-left: 8%;" id="btnone"
+                                                    onclick="return ViewRecentViewedTests()">view Details</button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="container-sm p-2 my-4  bg-light">
+
+                                    <div class="container-sm p-3 my-3  ">
+                                        <div class="row ">
+                                            <div class="col  ">
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;">PatientID</p>
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;">PatientName</p>
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;">Date</p>
+                                                <button type="button" class="btn btn-primary p-3 "
+                                                    style="display: flex; margin-left: 8%;" id="btnone"
+                                                    onclick="return ViewRecentViewedTests()">view Details</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container-sm  p-2 my-4 bg-light">
+
+                                    <div class="container-sm p-3 my-3  ">
+                                        <div class="row ">
+                                            <div class="col  ">
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;">PatientID</p>
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;">PatientName</p>
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;">Date</p>
+                                                <button type="button" class="btn btn-primary p-3 "
+                                                    style="display: flex; margin-left: 8%;" id="btnone"
+                                                    onclick="return ViewRecentViewedTests()">view Details</button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container-sm p-2 my-4  bg-light">
+
+                                    <div class="container-sm p-3 my-3  ">
+                                        <div class="row ">
+                                            <div class="col  ">
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;">PatientID</p>
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;">PatientName</p>
+                                                <p class="date bg-light text-dark"
+                                                    style="display: flex; margin-left: 8%;">Date</p>
+                                                <button type="button" class="btn btn-primary p-3 "
+                                                    style="display: flex; margin-left: 8%;" id="btnone"
+                                                    onclick="return ViewRecentViewedTests()">view Details</button>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer font-small bg-secondary text-white " style="bottom:0; position: relative;">
+        <div class="footer-copyright text-center py-4 my-0">
+            <a href="#top">CMS</a>
+        </div>
+    </footer>
+</body>
+
+</html>
