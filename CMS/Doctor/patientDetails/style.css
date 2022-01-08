@@ -1,0 +1,28 @@
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+.ailment,
+.Notes,
+.labtest,
+.medtest {
+  font-size: 1.1rem;
+}
+.ip:focus {
+  border: -3px solid rgb(60, 136, 243);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+}
+.add {
+  padding: 12px 20px;
+  margin: 8px 0;
+}
