@@ -1,18 +1,20 @@
 var error=0;
+var tokenno=Math.floor(Math.random() * 29);
+document.getElementById('token').value=tokenno+1;
 function fname()
 {
      user=form.name.value;
-     var nameformat = /^[A-Za-z]+$/;
+     var nameformat = /^[a-zA-Z\s]*$/;
     if(user=="")
     {
-        document.getElementById("fn").innerHTML="Enter Full name";
+        document.getElementById("fn").innerHTML="Enter  Full name";
         form.name.focus();
         error=1;
         
     }
     else if(user.length <=3 || !user.match(nameformat))
     {
-        document.getElementById("fn").innerHTML="Its not a Full name ";
+        document.getElementById("fn").innerHTML="Its not a valid  Full name ";
         form.name.focus();
         error=1;
     }
@@ -103,4 +105,8 @@ function home()
 function addpatient()
 {
     document.getElementById("frame").src="addpatient.html";
+}
+function bookappoint()
+{
+    document.getElementById("frame").src="bookappointment.html";
 }

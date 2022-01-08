@@ -1,4 +1,4 @@
-
+/* Elements */
 
 ul
 {
@@ -8,4 +8,38 @@ ul
 li
 {
     padding-bottom:15px;
+}
+h1{
+    text-align:center;
+}
+
+/* Classes*/
+
+.apps
+{
+  
+    border: 1px solid white;
+    border-radius:20px;
+    margin-bottom:15px;
+    background-color: azure;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* ID  */ 
+#recentapp
+{
+    float: right;
+    height:100%;
+}
+
+#bookappoint
+{
+    justify-content: space-evenly;
+}
+#token
+{
+    width:10%;
 }

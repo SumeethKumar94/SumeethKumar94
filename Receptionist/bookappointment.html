@@ -1,0 +1,73 @@
+<html>
+    <head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Book Appointments</h1>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+                    
+                   <h3>New Appointment</h3><br>
+                   <form class="form-group" id="bookappoint">
+                    <label>Token No:</label> <br>
+                    <input type="text" id="token" readonly><br><br>
+                       <label>Patient :</label><br>
+                       <input type="text" id="pname" required><br><br>
+                       <label>Available Doctor:</label> <br>
+                       <select required id="doc">
+                           <option></option>
+                           <option>Dr.Vishnu</option>
+                           <option>Dr.Hruday</option>
+                           <option>Dr.Aruna</option>
+                       </select>
+                       <br><br>
+                       <label>Appointment Date/Time :</label><br>
+                       <input type="datetime-local" required> <br><br>
+                        <button type="submit" class="btn btn-info btn-lg">Book Appointment</button>
+                   </form>
+               
+                </div>
+                <div class="col-md-4">
+                 
+                </div>
+                <div id="recentapp" class="col-md-3 bg-info"> 
+                  <h3>Recent Appointments</h3> <br><br>
+                  <div class="apps">
+                   Token No: 16<br>
+                   Patient Name &nbsp;&nbsp;&nbsp;&nbsp;: Nikhil<br>
+                   Assigned Doctor: Dr.Aruna<br>
+                   Date & Time: 12-Jan-2022 03:30 PM
+                  </div><br>
+                  <div class="apps">
+                    Token No: 19<br>
+                    Patient Name &nbsp;&nbsp;&nbsp;&nbsp;:Jeevan<br>
+                    Assigned Doctor: Dr.Vishnu<br>
+                    Date & Time: 13-Jan-2022 08:30 AM
+                   </div><br>
+                   <div class="apps">
+                    Token No: 28<br>
+                    Patient Name &nbsp;&nbsp;&nbsp;&nbsp;: Hardik<br>
+                    Assigned Doctor: Dr.Hruday<br>
+                    Date & Time: 12-Jan-2022 06:30 PM
+                   </div><br>
+                   <div class="apps">
+                    Token No: 1<br>
+                    Patient Name &nbsp;&nbsp;&nbsp;&nbsp;: Nikhil<br>
+                    Assigned Doctor: Dr.Aruna<br>
+                    Date & Time: 11-Jan-2022 09:30 AM
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
