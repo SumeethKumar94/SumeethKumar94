@@ -29,7 +29,7 @@
                        </select>
                        <br><br>
                        <label>Appointment Date/Time :</label><br>
-                       <input type="datetime-local" required> <br><br>
+                       <input type="datetime-local" required id="date" onblur="isDateBeforeToday()" > <br><br>
                         <button type="submit" class="btn btn-info btn-lg">Book Appointment</button>
                    </form>
                
@@ -69,5 +69,6 @@
     </div>
 </div>
 <script src="js/script.js"></script>
+<script src="js/type.js"></script>
 </body>
 </html>
